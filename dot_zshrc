@@ -1,0 +1,15 @@
+# Created by newuser for 5.9
+eval "$(starship init zsh)"
+
+alias c='clear'
+alias n='neofetch'
+alias ls='ls --color=auto'
+alias r='joshuto'
+alias vim='nvim'
+alias vi='nvim'
+
+export proxy="http://127.0.0.1:7890"
+
+export all_proxy=$proxy
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml

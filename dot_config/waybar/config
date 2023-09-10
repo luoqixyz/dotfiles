@@ -1,0 +1,50 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": ["hyprland/workspaces", "mpd"],
+	"modules-center": ["clock"],
+	"modules-right": ["network", "pulseaudio", "temperature", "cpu", "memory", "battery"],
+	"mpd": {
+		"tooltip": false,
+		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+		"format-disconnected": "ﳌ",
+		"format-stopped": "",
+        "state-icons": {
+            "playing": "",
+            "paused": ""
+        }
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["", "󰖀", "󰕾"]
+		}
+	},
+	"network": {
+		"tooltip": false,
+		"format-wifi": "   {essid}",
+		"format-ethernet": "{ipaddr}"
+	},
+	"cpu": {
+		"tooltip": false,
+		"format": "󰻠 {}%"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "󰍛 {}%"
+	},
+	"battery": {
+        "states": {
+            "good": 80,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    }
+}
