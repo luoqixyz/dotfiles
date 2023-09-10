@@ -8,6 +8,8 @@ alias r='joshuto'
 alias vim='nvim'
 alias vi='nvim'
 
+export EDITOR="/usr/bin/nvim"
+
 export proxy="http://127.0.0.1:7890"
 
 export all_proxy=$proxy
