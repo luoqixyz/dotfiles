@@ -7,11 +7,11 @@
 	"mpd": {
 		"tooltip": false,
 		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
-		"format-disconnected": "ﳌ",
-		"format-stopped": "",
+		"format-disconnected": "󰟎",
+		"format-stopped": "󰋋",
         "state-icons": {
-            "playing": "",
-            "paused": ""
+            "playing": "",
+            "paused": ""
         }
 	},
 	"pulseaudio": {

@@ -3,10 +3,13 @@ eval "$(starship init zsh)"
 
 alias c='clear'
 alias n='neofetch'
+alias H='Hyprland'
 alias ls='ls --color=auto'
 alias r='joshuto'
 alias vim='nvim'
 alias vi='nvim'
+
+alias clashf='clash -f ~/.config/clash/clash-config/1692607024452.yml'
 
 export EDITOR="/usr/bin/nvim"
 
