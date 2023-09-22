@@ -1,8 +1,8 @@
 {
 	"layer": "top",
 	"position": "top",
-	"modules-left": ["hyprland/workspaces", "mpd"],
-	"modules-center": ["clock"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-left": ["clock"],
 	"modules-right": ["network", "pulseaudio", "temperature", "cpu", "memory", "battery"],
 	"mpd": {
 		"tooltip": false,
@@ -42,9 +42,14 @@
             "critical": 15
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
-    }
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "max-length": 45
+      }
 }
